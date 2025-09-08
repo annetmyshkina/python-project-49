@@ -2,6 +2,8 @@ import prompt
 
 from brain_games.games.calculator import calculator
 from brain_games.games.check_even import check_even
+from brain_games.games.manual_games import game_instruction
+from brain_games.games.brain_gcd import find_gcd
 
 
 def start_game():
@@ -9,18 +11,13 @@ def start_game():
     user_name = prompt.string("May I have your name? ")
     print(f"Hello, {user_name}!")
     number_game = prompt.integer(
-        'Choose a game: 1 - "checking for parity", 2 - "calculator" '
+        'Choose a game: 1 - "checking for parity", 2 - "calculator", 3 - "greatest common divisor" '
     )
 
-    games = {1: check_even, 2: calculator}
+    games = {1: check_even, 2: calculator, 3: find_gcd}
     game_func = games.get(number_game)
 
-    if number_game == 1:
-        print('Answer "yes" if the number is even, otherwise answer "no".')
-    elif number_game == 2:
-        print("What is the result of the expression?")
-    elif number_game not in games:
-        print("There is no such number\nLet's try again, {user_name}!")
+    print(game_instruction(number_game))
 
     correct_answers_count = 0
 
@@ -34,7 +31,7 @@ def start_game():
             correct_answers_count += 1
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print("Let's try again, {user_name}!")
+            print(f"Let's try again, {user_name}!")
             break
 
     if correct_answers_count == 3:
