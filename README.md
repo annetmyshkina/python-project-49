@@ -8,3 +8,5 @@
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=annetmyshkina_python-project-49&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=annetmyshkina_python-project-49)
 
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=annetmyshkina_python-project-49&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=annetmyshkina_python-project-49)
+
+[![asciicast](https://asciinema.org/a/wfkvlCvVtBqL4bMmd5apulcdQ.svg)](https://asciinema.org/a/wfkvlCvVtBqL4bMmd5apulcdQ)
