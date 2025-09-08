@@ -1,6 +1,6 @@
 
 
-from brain_games.check_even import check_even
+from brain_games.games.check_even import check_even
 
 
 def main():
