@@ -4,6 +4,7 @@ from brain_games.games.calculator import calculator
 from brain_games.games.check_even import check_even
 from brain_games.games.manual_games import game_instruction
 from brain_games.games.brain_gcd import find_gcd
+from brain_games.games.brain_progression import encrypt_sequence
 
 
 def start_game():
@@ -11,10 +12,10 @@ def start_game():
     user_name = prompt.string("May I have your name? ")
     print(f"Hello, {user_name}!")
     number_game = prompt.integer(
-        'Choose a game: 1 - "checking for parity", 2 - "calculator", 3 - "greatest common divisor" '
+        'Choose a game: 1 - "checking for parity", 2 - "calculator", 3 - "greatest common divisor", 4 - "number missing progression" '
     )
 
-    games = {1: check_even, 2: calculator, 3: find_gcd}
+    games = {1: check_even, 2: calculator, 3: find_gcd, 4: encrypt_sequence} # словарь игр для выбора
     game_func = games.get(number_game)
 
     print(game_instruction(number_game))
@@ -36,3 +37,4 @@ def start_game():
 
     if correct_answers_count == 3:
         print(f"Congratulations, {user_name}!")
+

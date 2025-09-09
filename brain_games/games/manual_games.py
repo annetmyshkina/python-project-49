@@ -6,5 +6,7 @@ def game_instruction(number_game):
         return "What is the result of the expression?"
     elif number_game == 3:
         return 'Find the greatest common divisor of given numbers.'
+    elif number_game == 4:
+        return 'What number is missing in the progression?'
     else:
         return "There is no such number. Let's try again!"
