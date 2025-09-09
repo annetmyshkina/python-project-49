@@ -1,30 +1,18 @@
 import prompt
 
-from brain_games.games.calculator import calculator
-from brain_games.games.check_even import check_even
-from brain_games.games.manual_games import game_instruction
-from brain_games.games.brain_gcd import find_gcd
-from brain_games.games.brain_progression import encrypt_sequence
 
-
-def start_game():
+def start_game(game_func):
     print("Welcome to the Brain Games!")
     user_name = prompt.string("May I have your name? ")
     print(f"Hello, {user_name}!")
-    number_game = prompt.integer(
-        'Choose a game: 1 - "checking for parity", 2 - "calculator", 3 - "greatest common divisor", 4 - "number missing progression" '
-    )
 
-    games = {1: check_even, 2: calculator, 3: find_gcd, 4: encrypt_sequence} # словарь игр для выбора
-    game_func = games.get(number_game)
-
-    print(game_instruction(number_game))
-
+    print(game_func.get_description())
+    
     correct_answers_count = 0
 
     while correct_answers_count < 3:
-        random_number, correct_answer = game_func()
-        print(f"Question: {random_number}")
+        question, correct_answer = game_func.generate_question()
+        print(f"Question: {question}")
         user_answer = input("Your answer: ")
 
         if user_answer == correct_answer:

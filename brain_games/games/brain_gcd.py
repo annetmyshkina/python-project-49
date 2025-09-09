@@ -3,7 +3,12 @@
 from math import gcd
 from random import randint
 
-def find_gcd():
+
+def get_description():
+    return 'Find the greatest common divisor of given numbers.'
+
+
+def generate_question():
     a = randint(0, 100)
     b = randint(0, 100)
 
