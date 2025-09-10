@@ -3,18 +3,23 @@
 
 # The mind game project
 includes five mini-games:
+
 "Parity Check"
+
 [![asciicast](https://asciinema.org/a/FmjPz2ek6om6cO2LW04rxPVWz.svg)](https://asciinema.org/a/FmjPz2ek6om6cO2LW04rxPVWz)
 
 "Calculator"
 [![asciicast](https://asciinema.org/a/XG4UsNQPwcvdQkba7YJVbNdUB.svg)](https://asciinema.org/a/XG4UsNQPwcvdQkba7YJVbNdUB)
 
 "Greatest Common Divisor"
+
 [![asciicast](https://asciinema.org/a/URSm62jaBPbXL7gXS76C3MuDU.svg)](https://asciinema.org/a/URSm62jaBPbXL7gXS76C3MuDU)
 
 "Arithmetic progression"
+
 [![asciicast](https://asciinema.org/a/PXHQlaINEHoMeeLjk4CGBP3tv.svg)](https://asciinema.org/a/PXHQlaINEHoMeeLjk4CGBP3tv)
 
 "Is a prime number?"
+
 [![asciicast](https://asciinema.org/a/bX5DZ1mlRLSx4PLoYAGi1EPUo.svg)](https://asciinema.org/a/bX5DZ1mlRLSx4PLoYAGi1EPUo)
 
