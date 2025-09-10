@@ -9,6 +9,7 @@ includes five mini-games:
 [![asciicast](https://asciinema.org/a/FmjPz2ek6om6cO2LW04rxPVWz.svg)](https://asciinema.org/a/FmjPz2ek6om6cO2LW04rxPVWz)
 
 "Calculator"
+
 [![asciicast](https://asciinema.org/a/XG4UsNQPwcvdQkba7YJVbNdUB.svg)](https://asciinema.org/a/XG4UsNQPwcvdQkba7YJVbNdUB)
 
 "Greatest Common Divisor"
