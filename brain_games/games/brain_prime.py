@@ -8,8 +8,8 @@ def get_description():
 
 def generate_question():
     random_number = randint(0, 100)
-    divider = 0  # устанавливаем счетчик делителей
-    # находим наименьший делитель через цикл сокращая диапазон итераций нахождением корня из числа 
+    divider = 0  
+     
     for i in range(2, int(random_number ** 0.5) + 1):
         if random_number % i == 0:
             divider += i
