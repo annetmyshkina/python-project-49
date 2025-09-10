@@ -10,8 +10,8 @@ def get_description():
 def generate_question():
     sequence = get_progression()
     random_element = str(choice(sequence))  
-    question_sequence = ' '.join(['..' if j == random_element else j for j in sequence])  
-    return question_sequence, random_element
+    question_sequence = ['..' if j == random_element else j for j in sequence]
+    return ' '.join(question_sequence), random_element
 
 
 def get_progression():
