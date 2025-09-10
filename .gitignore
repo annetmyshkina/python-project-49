@@ -7,4 +7,5 @@ dist/
 .coverage
 coverage.xml
 *_cache/
+*.cost
 *.cast
