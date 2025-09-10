@@ -1,4 +1,7 @@
 [project]
+authors = [
+    {name = "Anna Myshkina", email = "annet.myskina@gmail.com"},
+]
 name = "hexlet-code"
 version = "0.1.0"
 description = "Add your description here"
