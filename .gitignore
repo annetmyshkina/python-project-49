@@ -1,7 +1,7 @@
 .venv
 demo.cast
 *.egg-info
-__pycache__
+__pycache__/
 dist/
 *.pyc
 .coverage
@@ -11,4 +11,3 @@ coverage.xml
 *.cast
 main.py
 .vscode/
-brain_games/__pycache__/
