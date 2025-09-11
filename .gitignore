@@ -9,3 +9,6 @@ coverage.xml
 *_cache/
 *.cost
 *.cast
+main.py
+.vscode/
+brain_games/__pycache__/
